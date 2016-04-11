@@ -25,8 +25,8 @@ public class ArrayList<E> implements List<E> {
      * Constructor which sets the initial size of the array to @size param
      * @param size The initial size of the array
      */
-    @SuppressWarnings("unchecked")
-    public ArrayList(int size) {   	
+	@SuppressWarnings("unchecked")
+	public ArrayList(int size) {   	
         elements = (E[]) new Object[size];
     }
 	
