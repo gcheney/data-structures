@@ -13,7 +13,7 @@ public class ArrayListTestRunner {
 			}
 		} 
 		else {
-			System.out.println("All test passed successfully!");
+			System.out.println("All test passed!");
 		}
 	}
 }
