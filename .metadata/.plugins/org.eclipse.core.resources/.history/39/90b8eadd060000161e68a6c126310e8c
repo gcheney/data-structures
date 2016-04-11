@@ -25,41 +25,40 @@ public interface List<E> {
 	public abstract E get(int index);
 
 	/**
-	 * Adds an element to the list
-	 * @param element The element to be added
+	 * 
+	 * @param element
 	 */
 	public abstract void add(E element);
 
 	/**
-	 * Removes the last added element
-	 * @return The removed element
+	 * 
+	 * @return
 	 */
 	public abstract E remove();
 
 	/**
-	 * Removes the element at the specified index
-	 * @param index The index to remove the element from
-	 * @throws ArrayIndexOutOfBoundsException
-	 * @return The removed element 
+	 * 
+	 * @param index
+	 * @return
 	 */
 	public abstract E remove(int index);
 
 	/**
-	 * Returns the size of the List
-	 * @return The size of the list
+	 * 
+	 * @return
 	 */
 	public abstract int size();
 
 	/**
-	 * Check wether or not the List is empty
-	 * @return True is the list is empty, false otherwise
+	 * 
+	 * @return
 	 */
 	public abstract boolean isEmpty();
 
 	/**
-	 * Converts the List into a standard array 
-	 * @param a An array of type E to convert the list to
-	 * @return The returned array
+	 * 
+	 * @param a
+	 * @return
 	 */
 	public abstract E[] toArray(E[] a);
 
