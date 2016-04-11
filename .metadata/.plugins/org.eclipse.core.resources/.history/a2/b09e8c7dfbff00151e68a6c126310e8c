@@ -1,0 +1,39 @@
+package arrays;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class ArrayListTest {
+
+	@Test
+	public void addingElementsReturnsCorrectElement() {
+		ArrayList<Integer> list = new ArrayList<Integer>(10);
+		
+        list.add(new Integer(2));
+        list.add(new Integer(5));
+        list.add(new Integer(1));
+        list.add(new Integer(23));
+        list.add(new Integer(14));
+        
+        assertEquals("List contains 2", true, list.contains(2));
+        assertEquals("List contains 6", true, list.contains(6));
+        assertEquals("Index of 14 is 4", true, list.indexOf(14));
+	}
+	
+	@Test
+	public void addingElementsReturnsCorrectElement() {
+		ArrayList<Integer> list = new ArrayList<Integer>(10);
+		
+        list.add(new Integer(2));
+        list.add(new Integer(5));
+        list.add(new Integer(1));
+        list.add(new Integer(23));
+        list.add(new Integer(14));
+        
+        assertEquals("List contains 2", true, list.contains(2));
+        assertEquals("List contains 6", true, list.contains(6));
+        assertEquals("Index of 14 is 4", true, list.indexOf(14));
+	}
+
+}

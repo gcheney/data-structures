@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ArrayListTest" project="arrays" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="arraylist.ArrayListTest" time="0.001">
+    <testcase name="gettingElementsReturnsCorrectElement" classname="arraylist.ArrayListTest" time="0.001"/>
+    <testcase name="addingElementsAddsCorrectElement" classname="arraylist.ArrayListTest" time="0.0"/>
+    <testcase name="toArrayMethodCreatesArray" classname="arraylist.ArrayListTest" time="0.0"/>
+    <testcase name="sizeMethodReturnsCorrectSize" classname="arraylist.ArrayListTest" time="0.0"/>
+  </testsuite>
+</testrun>
