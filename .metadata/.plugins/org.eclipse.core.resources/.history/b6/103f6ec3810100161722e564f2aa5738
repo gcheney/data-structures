@@ -1,0 +1,14 @@
+package circulararray;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CircularArrayTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}
