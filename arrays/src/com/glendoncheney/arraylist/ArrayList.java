@@ -1,4 +1,4 @@
-package arraylist;
+package com.glendoncheney.arraylist;
 
 import java.util.Arrays;
 

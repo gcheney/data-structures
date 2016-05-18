@@ -1,4 +1,4 @@
-package arraylist;
+package com.glendoncheney.arraylist;
 
 public interface List<E> {
 

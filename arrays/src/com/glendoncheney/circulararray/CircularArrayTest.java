@@ -1,4 +1,4 @@
-package circulararray;
+package com.glendoncheney.circulararray;
 
 import static org.junit.Assert.*;
 import org.junit.Test;

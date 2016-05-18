@@ -1,4 +1,4 @@
-package circulararray;
+package com.glendoncheney.circulararray;
 
 import java.util.Iterator;
 
