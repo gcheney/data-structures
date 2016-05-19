@@ -1,10 +1,14 @@
 package com.glendoncheney.binarysearchtree;
 
+/**
+ * A more visual test class for the BST implementation of the Tree interface
+ * @author glen
+ *
+ */
 public class BinarySearchTreeTest {
 	
-	 public static void main(String [] args)
-	   {
-		   BinarySearchTree<Integer> tree = new BinarySearchTree<>();
+	 public static void main(String [] args) {
+		   Tree<Integer> tree = new BinarySearchTree<>();
 		   
 		   tree.insert(50);
 		   tree.insert(25);
@@ -36,8 +40,7 @@ public class BinarySearchTreeTest {
 		   tree.insert(91);	
 		   tree.displayTree();
 		   
-		   System.out.println("Deleting 37...");
-		   tree.deleteIt(37);
+		   System.out.println("Deleting 87...");
 		   tree.delete(87);
 		   tree.displayTree();
 		   
@@ -52,19 +55,13 @@ public class BinarySearchTreeTest {
 		   System.out.println("Breadth First traversal...");
 		   tree.breadthFirstTraversal();
 		   
-		   tree.delete(33);
-		   if(tree.deleteIt(25)) {
-			   System.out.println("25 deleted");
-		   }
-		   
 		   tree.insert(21);
 		   tree.displayTree();
 		   
 		   tree.printLevelOrderBFS();
 		   tree.printInOrderDFS();
-		   //theTree.printLevelOrderDFS();
 		   
-		   System.out.println("Is valid? " + tree.isValidBST(-500, 500));
+		   System.out.println("Is valid BST? " + tree.isValidBST(-500, 500));
 		   
 		   tree.displayTree();
 		   int numLeaves = tree.countLeaves();
@@ -72,9 +69,6 @@ public class BinarySearchTreeTest {
 		   tree.displayLeaves();
 		   
 		   System.out.println("The trees max depth recursive is: " + tree.maxDepthRec());
-		   System.out.println("The trees max depth is: " + tree.maxDeothIterative());
-		   
-		   System.exit(0);
 	   }
 
 }
