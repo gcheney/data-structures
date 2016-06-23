@@ -1,2 +1,3 @@
-# data-structures-and-algorithms-practice
-Practice implementations of popular data structures and algorithms in Java
+# Data Structures
+
+Practice implementations of standard data structures such as stacks, linked lists, queues, binary search trees, and array lists. 
