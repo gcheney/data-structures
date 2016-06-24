@@ -32,14 +32,14 @@ public class GraphSearchTest {
 	    
 	    n.addEdge(m, 9);
 	    
-	    GraphSearch<Character> test = new GraphSearch<Character>(graph);
+	    GraphSearch<Character> search = new GraphSearch<Character>();
 	    
 	    System.out.println("Depth first search visits: ");
-	    test.depthFirstSearch();
+	    search.depthFirstSearch(graph);
 	    System.out.println();
 	    
 	    System.out.println("Breadth first search visits: ");
-	    test.breadthFirstSearch();
+	    search.breadthFirstSearch(graph);
 	    System.out.println();
 	}
 }

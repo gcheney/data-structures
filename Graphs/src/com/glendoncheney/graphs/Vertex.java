@@ -141,7 +141,7 @@ public class Vertex<E> implements Iterable<Edge<E>> {
 
     @Override
     public String toString() {
-    	return this.element.toString();
+    	return element.toString();
     }
     
 }
