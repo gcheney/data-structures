@@ -65,4 +65,9 @@ public class QueuedStack<E> implements Stack<E> {
 		return main.peek();
 	}
 
+	@Override
+	public int size() {
+		return main.size();
+	}
+
 }

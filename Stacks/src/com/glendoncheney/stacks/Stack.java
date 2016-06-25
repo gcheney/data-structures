@@ -37,8 +37,14 @@ public interface Stack<E> {
 	/**
 	 * The peek method returns the value at the top of the stack
 	 * @return value at the top of the stack
-	 * @exception EmptyStackException whent he stack is empty
+	 * @exception EmptyStackException when the stack is empty
 	 */	
 	public E peek();
+	
+	/**
+	 *  Returns the current size of the Stack
+	 * @return The current size of the stack
+	 */
+	public int size();
 
 }

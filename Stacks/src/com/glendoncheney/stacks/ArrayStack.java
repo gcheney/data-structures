@@ -10,13 +10,14 @@ import java.util.*;
 public class ArrayStack<E> implements Stack<E>{
 	private E [] stack; 
 	private int top; 
+	private int size;
 	private final static int DEFAULT_CAP = 10;
 	
 	/**
 	 * Default constructor, creates ArrayStack with default
 	 * capacity
 	 */
-	public ArrayStack(){
+	public ArrayStack() {
 		this(DEFAULT_CAP);
 	}
 	
@@ -28,6 +29,7 @@ public class ArrayStack<E> implements Stack<E>{
 	public ArrayStack(int capacity){
 		stack = (E[])new Object[capacity];
 		top =  -1;
+		size = 0;
 	}
 	
 	/**
@@ -64,6 +66,7 @@ public class ArrayStack<E> implements Stack<E>{
 		}
 		else {
 			top++;
+			size++;
 			stack[top] = element;
 			return element;
 		}
@@ -83,6 +86,7 @@ public class ArrayStack<E> implements Stack<E>{
 		else {
 			E popValue = stack[top];
 			top--;
+			size--;
 			return popValue;
 		}
 	}
@@ -99,6 +103,11 @@ public class ArrayStack<E> implements Stack<E>{
 		}
 		
 		return stack[top];
+	}
+
+	@Override
+	public int size() {
+		return size;
 	}
 	
 }

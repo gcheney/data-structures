@@ -16,16 +16,23 @@ public class LinkedStack<E> implements Stack<E> {
 		}
 	}
 	
-	private Node top = null; //top of the linked stack
+	private Node top; //top of the LinkedStack
+	private int size; //size of the LinkedStack
+	
+	public LinkedStack() {
+		top = null; 
+		size = 0;
+	}
 	
 	@Override
 	public boolean isEmpty(){
-		return top==null;
+		return top == null;
 	}
 	
 	@Override
 	public E push(E element){
 		top = new Node(element, top);
+		size++;
 		return element;
 	}
 	
@@ -37,6 +44,7 @@ public class LinkedStack<E> implements Stack<E> {
 		else {
 			E topValue = top.value;
 			top = top.next;
+			size--;
 			return topValue;
 		}
 	}
@@ -77,6 +85,11 @@ public class LinkedStack<E> implements Stack<E> {
 	public boolean isFull() {
 		// LinkedStack does not need to worry about being full
 		return false;
+	}
+
+	@Override
+	public int size() {
+		return this.size;
 	}
 	
 }
